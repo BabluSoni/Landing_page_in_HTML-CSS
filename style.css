@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.sidebar {
+    width: 10%;
+    height: 100vh;
+    background-color: black;
+}
+
+.favicon {
+    width: 50px;
+    margin: 15px 35px;
+}
+
+.social-link {
+    margin-top: 380px;
+    margin-left: 30px;
+}
+
+.social-link-icon {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+#main {
+    width: 90%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 20px 35px 5px 35px;
+}
+
+.navbar>img {
+    width: 95px;
+    height: 35px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #FF6A3E;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hader-content {
+    padding-top: 100px;
+    padding-left: 90px;
+}
+
+.hader-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+span {
+    color: #FF6A3E;
+}
+
+.hader-content p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.btn-box button {
+    padding: 15px 55px;
+    margin-top: 25px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-right: 15px;
+    background: #FF6A3E;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-box .btn-2 {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+
+/* media query for responsive*/
+
+
+/* for device 600px to 800px */
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    nav ul li {
+        font-size: 13px;
+        margin: 8px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    .user img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        cursor: pointer;
+        margin-right: -15px;
+        margin-top: 10px;
+    }
+    .navbar>img {
+        width: 60px;
+        height: 25px;
+        cursor: pointer;
+        margin: 10px 0px 0px -15px;
+    }
+    .favicon {
+        width: 30px;
+        margin: 20px 15px;
+    }
+    .social-link {
+        margin-top: 360px;
+        margin-left: 5px;
+    }
+    .social-link-icon {
+        width: 20px;
+        height: 20px;
+        margin: 20px;
+        display: block;
+    }
+    .hader-content h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* for device 400px to 599px */
+
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+    nav ul li {
+        font-size: .6rem;
+        margin: 4px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    .user img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: -15px;
+        margin-top: 5px;
+    }
+    .navbar>img {
+        width: 50px;
+        height: 17px;
+        margin: 10px 0px 0px -25px;
+    }
+    .favicon {
+        width: 20px;
+        margin: 20px 10px;
+    }
+    .social-link {
+        margin-top: 380px;
+        margin-left: -8px;
+    }
+    .hader-content h1 {
+        font-size: 1.5rem;
+    }
+    .hader-content p {
+        font-size: 10px;
+        letter-spacing: .5px;
+    }
+    .hader-content {
+        padding-left: 30px;
+        padding-top: 200px;
+    }
+    .btn-box button {
+        padding: 15px 45px;
+        margin-right: 15px;
+    }
+}
